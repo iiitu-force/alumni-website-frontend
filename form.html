@@ -1,0 +1,142 @@
+<html>
+	<head>
+<script>
+	function add()
+	{
+	var name = document.createElement("p");
+	var text1 = document.createTextNode("Name Of The Company");
+	name.appendChild(text1);
+	var to = document.createElement("p");
+	var text2 = document.createTextNode("To");
+	to.appendChild(text2);
+	var br = document.createElement("hr");
+
+	
+	
+	var company = document.createElement("input");
+	company.setAttribute("type", "text");
+	company.setAttribute("placeholder", "Company Name");
+	var para = document.createElement("p");
+	var text = document.createTextNode("Duration");
+	para.appendChild(text);
+	var date1 = document.createElement("input");
+	date1.setAttribute("type", "date");
+	
+	var date2 = document.createElement("input");
+	date2.setAttribute("type", "date");
+	var element = document.getElementById("work");
+	element.appendChild(name);
+	element.appendChild(company);
+	element.appendChild(para);
+	element.appendChild(date1);
+	element.appendChild(text2);
+	element.appendChild(date2);
+	element.appendChild(br);
+	
+	
+	
+	
+	
+	
+	}
+</script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<style>
+		body{
+			background:url("download1.jpg");
+			background-size:100%;
+		}
+		.round
+		{	border:3px solid black;
+			border-radius:25%;
+		}
+		.sub{
+		
+		}
+		.form{
+		width:30vw;
+		text-align:left;
+			background-color:#888888;
+			border-radius:3%;
+			padding:3px;
+		}
+		.sub:hover
+		{
+			background-color:lightgreen;
+		}
+		.res
+		{
+		}
+		.res:hover{
+			background-color:red;
+		}
+			.add{
+			border-radius-50%;
+		}
+		input[type=text], select {
+			
+			
+			padding: 3px 3px;
+			margin: 3px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			
+		}
+		input[type=email]
+		{
+
+
+			padding: 3px 3px;
+			margin: 3px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		
+		</style>
+	</head>
+
+	<body>
+		<center>
+		<br><br><br><br>
+		<h1>Regitration</h1>
+		<hr width="100">
+		<h6>Inputs Marked with * are required</h6>
+		<div class="form">
+		<form action="a.php" method="POST">
+		
+		Name*:<br><input type="text" placeholder="Name" name="name" required><br><br>
+		Email*:<br><input type="email" placeholder="Email" name="email" oninvalid="this.setCustomValidity('-_- cheater,Please enter a valid email')" required><br><br>
+		Branch*:<br>
+		<select name="branch" required>
+			<option value="CSE">CSE</option>
+			<option value="ECE">ECE</option>
+			<option value="IT">IT</option>
+		</select><br><br>
+		Batch*:<br>
+		<select name="batch" required>
+			<option value="FIRSt">FIRST</option>
+			<option value="SECOND">SECOND</option>
+			<option value="THIRD">THIRD</option>
+			<option value="THIRD">FOURTH</option>
+		</select><hr>
+		<br>
+<div id="work">
+		Work Experience:<br><br>Company name:<br><input type="text" placeholder="Name Of The Company" name="work-experience-name"></input><br>Duration:<br>
+		<input type="date" name="work-experience-duration"></input>
+		To
+		<input type="date" name="work-experience-duration"></input><hr><br></div>
+		<center><button class="btn" type="button" onclick="add()">+</button><br><br></center>
+		
+		
+		GitHub Link:<br><input type="text" placeholder="Github Link"><br><br>
+		LinkeIn Link:<br><input type="text" placeholder="Linkedin Link" ><br><br>
+		<center><input type="submit" name="submit" class="sub btn">&nbsp&nbsp<input type="reset" name="reset" class="res btn"><center>
+		</form>
+		</div>
+		</center>
+
+	</body>
+</html>
