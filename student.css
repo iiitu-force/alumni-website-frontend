@@ -1,0 +1,472 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background: antiquewhite;
+    min-width: 100%;
+}
+.mobile{
+    display: none;
+}
+#studentnames{
+    left: 10px;
+    position: relative;
+    top: -10px;
+    background: #ececec;
+    width: 400px;
+    height: 90vh;
+    box-shadow: 0px 0px 100px rgba(0,0,0,0.8);
+    border-radius: 10px;
+    background: grey;
+    border-radius: 20px;
+}
+#student-head{
+    width: 400px;
+    height: 80px;
+    box-sizing: border-box;
+    font-family: cursive;
+    position: fixed;
+    text-align: center;
+    background: #262626;
+    z-index: 0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+#student-names{
+    position: relative;
+    top: 81px;
+    box-sizing: border-box;
+    height: 78vh;
+    overflow-y: scroll;
+    background: grey;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#studentnames h1{
+    font-weight: 400;
+    color: white;
+}
+#student-names p{
+    margin-left: 2.5px;
+    font-size: 2em;
+    font-weight: 400;
+    z-index: -2;
+}
+#studentnames p a{
+    position: relative;
+    color: #262626;
+    left: 30px;
+}
+#studentnames .activeon{
+    background: #262626;
+    border-radius: 5px;
+    filter: grayscale(100%);
+}
+#studentnames .activeon a{
+    color: #ececec;
+}
+#college-pic{
+    position: absolute;
+    top:50%;
+    left:60%;
+    transform: translate(-50%,-50%);
+}
+#college-pic img{
+    height: 600px;
+    width:600px;
+    opacity: 0.3;
+    z-index: -10;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #ececec;
+    border-bottom-right-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+#containermain{
+    position: absolute;
+    top: 52.5%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 650px;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    padding: 100px;
+    box-shadow: 0px 0px 100px rgba(0,0,0,0.8);
+    background: #ececec;
+    border-radius: 20px;
+    display: none;
+}
+#containermain #dp{
+    position: relative;
+    top:-40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#dp img{
+    height: 150px;
+    widows: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.8);
+    transition: 1s;
+}
+#dp img:hover{
+    transform: scale(1.5);
+    border-radius: 20px;
+    transition-timing-function: ease-in;
+    transition: all 1s;
+}
+#details{
+    position: relative;
+    text-transform: uppercase;
+    padding: 42px;
+    margin-left: -10%;
+    box-sizing: border-box;
+    top: -40px;
+}
+#details p{
+    font-weight: 700;
+    margin-bottom: 25px;
+} 
+#containermain #details i{
+    font-size: 4em;
+    text-align: center;
+    margin-left:30%;
+    transition: transform 0.7s;
+}
+a:hover{
+   text-decoration: none; 
+}
+#containermain #details i:hover{
+    color: black;
+    transform: scale(1.5);
+    transition: transform 0.7s;         
+}
+#work-experience{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    height: 600px;
+    width: 600px;
+    background: grey;
+    display: none;
+    border-radius: 20px;
+}
+#workclose{
+    position: relative;
+    font-size: 5em;
+    top: -20px;
+    float: right;
+    right: 10px;
+    color: #262626;
+    z-index: 2;
+}
+#work-experience ul{
+    position: relative;
+    top: 30px;
+}
+#work-experience ul li{
+    position: relative;
+    font-size: 28px;
+    color: #fff;
+    list-style: circle;
+    line-height: 200%;
+    color: #262626;
+}
+#work-experience center{
+    font-size: 3em;
+    font-weight: 700;
+    mix-blend-mode: screen;
+    z-index: -2;
+}
+@media(max-width: 1189px){
+    #containermain{
+    position: absolute;
+    top: 52.5%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    width: 520px;
+    height: 670px;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    padding: 100px;
+    box-shadow: 0px 0px 100px rgba(0,0,0,0.8);
+    background: #ececec;
+    border-radius: 20px;
+    display: none;
+    }
+    #college-pic img{
+        height: 300px;
+        width: 300px;
+        margin-left: 30%;
+    }
+    #work-experience{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    height: 670px;
+    width: 520px;
+    background: grey;
+    display: none;
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+}
+/*MOBILE USERS MOBILE USERS MOBILE USERS MOBILE USERS*/
+@media(max-width: 768px){
+    ::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+    }
+    ::-webkit-scrollbar-track {
+    display: none;
+     }
+    ::-webkit-scrollbar-thumb {
+    display: none;
+     }
+    ::-webkit-scrollbar-thumb:hover {
+    display: none;
+     }
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: antiquewhite;
+        height: 100vh;
+        max-width: 768px auto;
+    }
+    .desktop-user{
+        display: none;
+    }
+    .mobile{
+        display: contents;
+        position: relative;
+        min-height: 100%;
+        height: 100vh;
+    }
+    #mob-list-students{
+        position: relative;
+        max-width: 100%;
+        height: 50px;
+        background: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -20px;
+        box-shadow: 0px 0px 50px hsl(0, 16%, 91%);
+    }
+    #mob-list-students a{
+        position: absolute;
+        font-size: 2.5em;
+        font-weight: 900;
+        left: 20px;
+        color: black;
+        cursor: pointer;
+    }
+    #mob-list-students span{
+        font-size: 2.5em;
+        font-weight: 900;
+        mix-blend-mode: difference;
+        font-family: sans-serif;
+        box-shadow: 0px 0px 30px hsl(0, 16%, 91%);
+    }
+    .mobile-user ul{
+        position: relative;
+        background: #ececec;
+        top: -20px;
+        height: 240px;
+        overflow-y: scroll;
+        width: 100%;
+        list-style: none;
+        transform-origin: top;
+        transform: scaleY(0);
+        transition: transform 0s;
+        box-sizing: border-box;
+    }
+    .mobile-user .onlist{
+        transform: scaleY(1);
+        z-index: 9;
+        transition: transform 0.3s;
+    }
+    .mobile-user ul li{
+        position: relative;
+        width: 150%;
+        height: 40px;
+        display: block;
+        left: -40px;
+        align-content: center;
+        font-size: 2em;
+        font-weight: 500;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 2px rgba(0,0,0,0.8);
+        padding-left: 20px;
+    }
+    .mobile-user ul li:hover{
+        background: #555;
+        color: #ececec;
+        cursor: pointer;
+    }
+    .mobile-user ul .active{
+        background: #555;
+        color: #ececec;
+    }
+    #mobile-profile{
+        position: relative;
+        min-width: 100%;
+        height: 88vh;
+        top: -270px;
+        z-index: 8;
+        background: antiquewhite;
+        color: aliceblue;
+        overflow-x: hidden;
+        display: none;
+        color: #262626;
+    }
+    #mobile-profile #mobile-dp{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        top: 20px;
+        text-align: center;
+    }
+    #mobile-profile #mobile-dp img{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        top: 15px;
+        box-shadow: 0px 0px 100px rgba(0,0,0,0.8);
+        transition: all 0.7s;
+    }
+    #mobile-profile #mobile-student-detail{
+        position: relative;
+        width: 100%;
+        height: calc(88vh - 250px);
+        top: 10px;
+    }
+    #mobile-profile #mobile-student-detail p{
+        position: relative;
+        width: 100% auto;
+        height: 30px;
+        font-weight: 400;
+        font-size: 1.4em;
+        line-height: 200%;
+        left: 25px;
+    }
+    #mobile-profile #mobile-student-detail i{
+        position: relative;
+        font-size: 5em;
+        margin-left: 60px;
+        top: 27.5px;
+        transition: all 0.7s;
+        left: 10%;
+    }
+    #mobile-profile #mobile-student-detail i:hover{
+        color: #262626;
+    }
+    .offff{
+        transition: all 0.5s;
+         position: relative;
+        width: 110%;
+        height: 250px;
+        background: #fff;
+        transition: all 0.5s;
+        display: none;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        color: antiquewhite;
+        left: -10%;
+    }
+    .offff ul{
+        position: absolute;
+        width: 91%;
+        left: 35px;
+        font-size: 1.5em;
+        list-style: square;
+        color: #262626;
+    }
+    .workon{
+        display: block;
+    }
+    #mobile-profile label{
+        position: relative;
+        width: 100%;
+        height:125px;
+        background: antiquewhite;
+    }
+    #college-mobile-pic img{
+        position: absolute;
+        height: 400px;
+        width: 400px;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.4;
+        z-index: -3;
+    }
+}
+/* something like tablet mode:) */
+@media(min-width: 560px){
+    #mobile-profile #mobile-student-detail p{
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 200%;
+        left: 30%;
+    }
+    #mobile-profile #mobile-student-detail i{
+        position: relative;
+        font-size: 5em;
+        margin-left: 60px;
+        top: 27.5px;
+        transition: all 0.7s;
+        left: 27.5%;
+    }
+    #college-mobile-pic img{
+        position: absolute;
+        height: 400px;
+        width: 400px;
+        left: 120px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.4;
+        z-index: -3;
+    }
+    .offff{
+        transition: all 0.5s;
+         position: relative;
+        width: 110%;
+        height: 250px;
+        background: #ececec;
+        transition: all 0.5s;
+        display: none;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        color: #262626;
+    }
+    .offff ul{
+        position: absolute;
+        width: 91%;
+        left: 75px;
+        font-size: 1.5em;
+        list-style: square;
+    }
+    .workon{
+        display: block;
+    }
+}
