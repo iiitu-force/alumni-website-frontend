@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Student</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <!--TOPMOST-navbar-->
+    <nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">IIIT Alumini</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><i class="fas fa-home"></i> Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="#"><i class="fas fa-university"></i> About Us</a></li>
+        <li><a href="#"><i class="fas fa-phone"></i> Contact Us</a></li>
+      </ul>
+    </div><!-- /.navbar-co
+  </div><!-- /.container-fluid -->
+</nav>
+           <div class="desktop-user">
+           <!-- list of students -->
+    <div id="studentnames">
+          <div id="student-head">
+             <h1>
+                 <span>Student Names</span>
+              </h1>
+        </div>
+            <div id="student-names">
+            
+        </div>
+    </div>
+    <!--details of students -->
+        <div id="college-pic">
+         <img src="iiitulogo.png">
+        </div>
+    <div id="containermain">
+       <div id="dp">
+        <img src="" id="dpdesktop">
+        </div>
+        <div id="details">
+            <p>Name : <span id="namedesktop"></span></p>
+            <p>E-mail : <span id="emaildesktop"></span></p>
+            <p>Roll No : <span id="rollnodesktop"></span></p>
+            <p>Year : <span id="yearsemdesktop"></span></p>
+            <p>Present Organistaion : <span id="presentorgandesktop"></span></p>
+            <p>Contact Detials : <span id="contactdesktop"></span></p>
+            <p>Work Experience : <span><a id="work" href="#">VIEW</a></span></p>
+            <a href="#" id="github"><i class="fab fa-github"></i></a>
+            <a href="#" id="linkedin"><i class="fab fa-linkedin"></i></a>
+        </div>
+           </div>
+        <div id="work-experience">
+        <a id="workclose" href="#">&times;</a>
+            <center>Work Experience</center>
+            <ul id="workexpdesktop">
+            <!--work experience content here -->
+            </ul>
+        </div>
+        </div>
+        <!--for mobile users now
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MOBILE Users-->
+        <div class="mobile">
+        <div class="mobile-user">
+            <!-- SUDENTS-LISTS -->
+            <div id="mob-list-students">
+                <a id="bars-mobile"><i class="fas fa-bars"></i></a>
+                <span>Student Names</span>
+            </div>
+            <div id="college-mobile-pic">
+            <img src="iiitulogo.png">
+            </div>
+               <ul id="mobile-list-names">
+                
+                </ul>
+        </div>
+        <div id="mobile-profile">
+            <div id="mobile-dp">
+        <img id="dpmob" src="">
+        </div>
+           <div id="mobile-student-detail">
+            <p>Name : <span id="namemobile"></span></p>
+            <p>E-mail : <span id="emailmobile"></span></p>
+            <p>Roll No : <span id="rollnomobile"></span></p>
+            <p>Year : <span id="yearsemmobile"></span></p>
+            <p>Present Organistaion : <span id="presentorganmobile"></span></p>
+            <p>Contact Detials : <span id="contactmobile"></span></p>
+            <p>Work Experience : <span><a id="work-mobile" href="#">VIEW</a></span></p>
+               <div id="mobile-work-experience" class="offff ">
+                <ul id="workexpmob">
+                   <!-- work-experience here -->
+                
+                   </ul>
+               </div>
+            <label>
+               <a href="#" id="githubmob"><i class="fab fa-github"></i></a>
+            <a href="#" id="linkedinmob"><i class="fab fa-linkedin"></i></a>
+               </label>
+            </div> 
+         </div>
+        </div>
+    <script src="student.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
