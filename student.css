@@ -1,3 +1,4 @@
+@media(min-width: 767.98px){
 body{
     padding: 0;
     margin: 0;
@@ -190,6 +191,7 @@ a:hover{
     mix-blend-mode: screen;
     z-index: -2;
 }
+}
 @media(max-width: 1189px){
     #containermain{
     position: absolute;
@@ -226,7 +228,7 @@ a:hover{
 }
 }
 /*MOBILE USERS MOBILE USERS MOBILE USERS MOBILE USERS*/
-@media(max-width: 768px){
+@media(max-width: 767.98px){
     ::-webkit-scrollbar {
     width: 10px;
     display: none;
@@ -246,7 +248,7 @@ a:hover{
         font-family: sans-serif;
         background: antiquewhite;
         height: 100vh;
-        max-width: 768px auto;
+        max-width: 767.98;
     }
     .desktop-user{
         display: none;
@@ -419,7 +421,7 @@ a:hover{
     }
 }
 /* something like tablet mode:) */
-@media(min-width: 560px){
+@media(min-width: 575.98px) and (max-width: 767.98px){
     #mobile-profile #mobile-student-detail p{
         position: relative;
         width: 100%;
