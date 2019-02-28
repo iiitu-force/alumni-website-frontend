@@ -127,6 +127,8 @@ tab.addEventListener('click',function(e){
 })
 // mobile-user profile
 mobileprofile.addEventListener('click',function(e){
+    if(e.target.nodeName=='LI')
+        {
     var mobdp = document.getElementById("dpmob");
     var namemob = document.getElementById("namemobile");
     var emailmob = document.getElementById("emailmobile");
@@ -160,4 +162,5 @@ mobileprofile.addEventListener('click',function(e){
                 }
     githubmob.href=github[e.target.getAttribute("index")];
     linkedinmob.href=linkedin[e.target.getAttribute("index")];
+            }
 })
