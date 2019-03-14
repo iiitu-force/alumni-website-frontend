@@ -1,0 +1,15 @@
+.heading{
+	text-align:center; 
+	margin-top: 150px;		
+}
+.container{
+	height: 500px;	
+/*	margin: auto;
+*/
+	border: 1px solid grey;
+	position: relative;
+}
+.buttons{
+	position: absolute;
+	left: 40%;
+}
